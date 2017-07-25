@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <link href="./style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="one three" id="test1">我的第一个标题</div>
+    <div class="one">我的第一个标题</div>
+    <div class="two" onclick="hello()">点我呀，点我呀</div>
+    <p>我的第一个段落。</p>
+
+    <script type='text/javascript' src='./jquery-1.5.1.js'></script>
+    <script type='text/javascript' src='./hellojs.js'></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#test1').click(function () {
+                $(this).removeClass("three");
+            })
+        })
+    </script>
+</body>
+
+</html>
